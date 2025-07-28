@@ -1,0 +1,36 @@
+{
+  "name": "playwright-framework-ui-only",
+  "version": "1.0.0",
+  "description": "Framework de testing UI con Playwright, TypeScript y Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters \"{\\\"headless\\\": false}\"",
+    "test:headless": "cucumber-js --world-parameters \"{\\\"headless\\\": true}\"",
+    "test:report": "cucumber-js --format html:reports/cucumber-report.html",
+    "test:parallel": "cucumber-js --parallel 2",
+    "test:tags": "cucumber-js --tags",
+    "clean": "rd /s /q node_modules && del package-lock.json",
+    "reinstall": "npm run clean && npm install",
+    "lint": "eslint src/**/*.ts features/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts features/**/*.ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "typescript",
+    "testing",
+    "ui",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

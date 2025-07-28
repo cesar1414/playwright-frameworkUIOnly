@@ -1,0 +1,11 @@
+{
+  "default": {
+    "require": [
+      "features/step-definitions/*.ts",
+      "src/support/CustomWorld.ts"
+    ],
+    "requireModule": ["ts-node/register"],
+    "format": ["html:reports/cucumber-report.html"],
+    "timeout": 120000
+  }
+}
