@@ -35,11 +35,11 @@ First, let's grab the framework from the repository:
 
 ```bash
 # Clone the repository (replace with your actual repo URL)
-git clone <repository-url>
+git clone https://github.com/cesar1414/playwright-frameworkUIOnly.git
 cd playwright-frameworkUIOnly
 
 # If you have the full URL, it would look something like:
-# git clone https://github.com/yourusername/playwright-frameworkUIOnly.git
+# git clone https://github.com/cesar1414/playwright-frameworkUIOnly.git
 ```
 
 ### Step 2: Install Everything
